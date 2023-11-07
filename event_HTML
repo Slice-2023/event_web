@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+  }
+
+  .parallax {
+    background-image: url('https://cdn.pixabay.com/photo/2013/02/20/01/04/meeting-83519_1280.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    color: #ff9f05;
+    padding: 5% 0;
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #2a2a72;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .section-description {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .button {
+    padding: 15px 30px;
+    background-color: rgb(255, 181, 97);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #ff4136;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .column {
+    width: 48%;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .contact-info,
+  .social-links,
+  .event-schedule,
+  .event-giveaway,
+  .empty-column {
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0.8;
+  }
+
+  .social-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #2a2a72;
+  }
+</style>
+</head>
+<body>
+<div class="parallax">
+  <div class="header">
+    <h1>Event</h1>
+    <a href="http://127.0.0.1:3000/vscode/Websitedevlopment/Site.html" class="button">Register Now</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section" id="speakers">
+    <h2 class="section-title">Our Esteemed Speakers</h2>
+    <div class="section-description">
+      <p>Speaker details and content go here.</p>
+    </div>
+  </div>
+
+  <div class="section" id="schedule">
+    <h2 class="section-title">Event Schedule</h2>
+    <div class="row">
+      <div class="column event-schedule">
+        <h3>Event Details</h3>
+        <p>Details about the event schedule go here.</p>
+      </div>
+      <div class="column event-giveaway">
+        <h3>Event Giveaway</h3>
+        <p>Details about event giveaways go here.</p>
+      </div>
+      <div class="column empty-column">
+        <!-- Leave this empty for future content -->
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="sponsors">
+    <h2 class="section-title">Our Sponsors</h2>
+    <div class="section-description">
+      <p>Sponsor details and logos go here.</p>
+    </div>
+  </div>
+
+  <div class="section" id="about-us">
+    <h2 class="section-title">About Us</h2>
+    <div class="section-description">
+      <p>We are a passionate team of designers and developers who come together every year to create an unforgettable conference experience. Our mission is to inspire, educate, and connect the design community.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="section" id="contact">
+    <h2 class="section-title" align = "center">Contact</h2>
+    <div class="row">
+      <div class="column contact-info">
+        <h3>Contact Information</h3>
+        <p>Email: contact@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Event Street, City</p>
+      </div>
+      <div class="column social-links">
+        <h3>Connect with Us</h3>
+        <p>Follow us on social media:</p>
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
 
